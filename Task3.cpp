@@ -4,11 +4,11 @@ using namespace std;
 
 int main(){
     
-    int number; //variable that will hold input from user
+    int number; //input from user
     cout<<"Enter number"<<endl;
     cin>>number;
     
-    int index =0 ;
+    int index = 0; 
     string arr[number];
     
     for(int i = 1; i<=number; i++){
