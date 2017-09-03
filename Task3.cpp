@@ -1,25 +1,42 @@
 #include <iostream>
 using namespace std;
+#include <string>
 
 int main(){
     
     int number; //variable that will hold input from user
     cout<<"Enter number"<<endl;
     cin>>number;
- 
+    
+    int index =0 ;
+    string arr[number];
+    
     for(int i = 1; i<=number; i++){
         if(i%3 == 0 && i%5 == 0){
-            cout<<"fizzbuzz ";
+            //cout<<" fizzbuzz ";
+            arr[index] = "\'fizzbuzz\'";
+            index++;
         }
         else if(i%3 == 0){
-            cout<<" fizz ";
+           // cout<<" fizz ";
+            arr[index] = "\'fizz\'";
+            index++;
         }
         else if(i%5 == 0){
-            cout<<" buzz ";
+            //cout<<" buzz ";
+            arr[index] = "\'buzz\'";
+            index++;
         }
         else {
-            cout<<" "<< i <<" " ;
+            //cout<<" "<< i <<" " ;
+            arr[index] = to_string(i);
+            index++;
         }
     }
+    
+    for(int i=0; i <= index; i++){
+        cout<<" "<<arr[i]<<" ";
+    }
+    
     return 0;
 }
