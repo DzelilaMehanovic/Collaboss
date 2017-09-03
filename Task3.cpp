@@ -29,7 +29,7 @@ int main(){
         }
         else {
             //cout<<" "<< i <<" " ;
-            arr[index] = to_string(i);
+            arr[index] = to_string(i); //number is converted to string, so everything is stored in one string array
             index++;
         }
     }
