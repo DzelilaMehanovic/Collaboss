@@ -3,7 +3,7 @@ using namespace std;
 int isPrime(int factor);
 int main(){
     
-    int number; //variable that will hold input from user
+    int number; 
     cout<<"Enter number"<<endl;
     cin>>number;
     int arr[100]={};
